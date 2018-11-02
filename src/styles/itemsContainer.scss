@@ -1,0 +1,26 @@
+.itemHeader {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.5em;
+}
+.itemsContainer {
+	.itemContainer {
+		display:flex;
+		align-items: baseline;
+		padding-bottom:0.5em;
+		border-bottom: 1px solid #eee;
+		margin-bottom: 1em;
+		.item {
+			flex: 1;
+		}
+	}
+} 
+.itemSummary {
+	margin-bottom: 1em;
+	.itemsTotal {
+		display: block;
+		text-align: right;
+		span {
+			font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["@babel/preset-env", {"modules": false}], 
+    "@babel/preset-react"
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        ["@babel/preset-env"],
+        ["@babel/preset-react", {
+          "development": true
+        }]
+      ]
+    },
+    "test": {
+      "presets": [
+        ["@babel/preset-env"], 
+        "@babel/preset-react"
+      ]
+    }
+  },
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}

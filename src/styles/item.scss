@@ -1,0 +1,32 @@
+.item {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+	.itemLabel {
+		color: #333;
+		display: inline-block;
+		padding: 0 10px;
+		font-size: 1.5em;
+		flex: 1;
+	}
+
+	.itemCost {
+		display: inline-block;
+		color: #333;
+		font-size: 1em;
+		margin-right: 2em;
+		font-family: 'Karla', sans-serif;
+	}
+	.itemQuantity {
+		margin-right: 0.5em;
+	}
+	.totalCost {
+		font-size: 1.5em;
+		margin-right: 1em;
+	}
+
+	.itemControls {
+		padding: 0px 1em;
+	}
+}

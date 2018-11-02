@@ -1,0 +1,77 @@
+{
+  "name": "day-in-the-life-of-a-ux-engineer",
+  "version": "0.0.1",
+  "description": "Sample coding environment to introduce candidates into what daily life is like at ServiceNow for a UX engineer.",
+  "main": "dist/bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ServiceNow/day-in-the-life-of-a-ux-engineer.git"
+  },
+  "author": {
+    "name": "Boki Beran",
+    "email": "boki.beran@servicenow.com",
+    "url": "http://github.com/turboki"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "homepage": "https://github.com/ServiceNow/day-in-the-life-of-a-ux-engineer#README",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development --open",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@webcomponents/custom-elements": "^1.2.1",
+    "classnames": "^2.2.6",
+    "enzyme": "^3.7.0",
+    "immutability-helper": "^2.8.1",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-shadow-dom-retarget-events": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.5.4",
+    "css-loader": "^1.0.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.4",
+    "react-hot-loader": "^4.3.11",
+    "react-test-renderer": "^16.5.2",
+    "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "to-string-loader": "^1.1.5",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "jest": {
+    "rootDir": "./src",
+    "verbose": true,
+    "bail": false,
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "moduleNameMapper": {
+      "\\.(jpe?g|png|gif|eot|otf|webp|svg|ttf|woff2?|mp[34]|webm|wav|m4a|aac|oga)$": "<rootDir>../__mocks__/fileMock.js",
+      "\\.(css|less|s[ac]ss|styl)$": "<rootDir>../__mocks__/styleMock.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  }
+}
